@@ -1,7 +1,7 @@
 // Button.js
-function Button({ title, onClick }) {
+function Button({ title, onClick,isActive=false }) {
   return (
-    <button onClick={onClick} style={{ padding: 10, backgroundColor: 'blue', color: 'white' }}>
+    <button onClick={onClick} style={{ padding: 10, backgroundColor: isActive?"green":'blue', color: 'white' }}>
       {title}
     </button>
   );
